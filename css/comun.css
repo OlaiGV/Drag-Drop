@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+:root {
+  --size-normal: 18px;
+  --size-medio-small: 20px;
+  --size-medio: 24px;
+  --size-grande: 30px;
+  --fuente: "Caveat", cursive;
+  --fuente-logo: "Pacifico", cursive;
+  --fuente-eslogan: "Abril Fatface", serif;
+  --color-letra-MarronClara: #503627;
+  --color-letra-clara: #dceef2;
+  --color-letra-oscura: #333;
+  --fondo-marron-oscuro: #403836;
+  --fondo-marron-medio-claro: #73655a;
+  --fondo-marron-claro: #8c7e72;
+}
+
+html,
+body,
+ul,
+li,
+a,
+p,
+span {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente);
+  font-size: var(--size-normal);
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}

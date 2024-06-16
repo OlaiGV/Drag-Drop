@@ -1,0 +1,92 @@
+[
+  {
+    "id": "id1",
+    "titulo": "Angular",
+    "info": "Un curso intensivo para dominar Angular, el marco de trabajo líder para el desarrollo de aplicaciones web. ¡Eleva tus habilidades de programación al siguiente nivel!",
+    "imagen": "angular.png"
+  },
+  {
+    "id": "id2",
+    "titulo": "HTML",
+    "info": "Aprende HTML, el lenguaje de marcado que da estructura a todas las páginas web. ¡El primer paso hacia tu carrera en desarrollo web!",
+    "imagen": "html.png"
+  },
+  {
+    "id": "id3",
+    "titulo": "CSS",
+    "info": "Un curso práctico para dominar CSS, la clave para diseñar sitios web atractivos y responsivos. ¡Dale vida a tus páginas web!",
+    "imagen": "css.png"
+  },
+  {
+    "id": "id4",
+    "titulo": "JavaScript",
+    "info": "Profundiza en JavaScript, el lenguaje de programación que da interactividad a las páginas web. ¡Lleva tus habilidades de desarrollo web al siguiente nivel!",
+    "imagen": "javascript.png"
+  },
+  {
+    "id": "id5",
+    "titulo": "IA",
+    "info": "Sumérgete en el fascinante mundo de la Inteligencia Artificial. Explora conceptos clave, técnicas y aplicaciones de la IA en este curso introductorio.",
+    "imagen": "ia.png"
+  },
+  {
+    "id": "id6",
+    "titulo": "GIT",
+    "info": "Aprende GIT, un sistema de control de versiones esencial para el desarrollo de software colaborativo. Gestionar tu código nunca ha sido tan fácil.",
+    "imagen": "git.png"
+  },
+  {
+    "id": "id7",
+    "titulo": "Linux",
+    "info": "Descubre Linux, un sistema operativo de código abierto utilizado en todo el mundo. Aprende a administrar y optimizar tu entorno de desarrollo.",
+    "imagen": "linux.png"
+  },
+  {
+    "id": "id8",
+    "titulo": "NodeJS",
+    "info": "Explora NodeJS, un entorno de ejecución para JavaScript del lado del servidor. Crea aplicaciones escalables y de alto rendimiento.",
+    "imagen": "nodejs.png"
+  },
+  {
+    "id": "id9",
+    "titulo": "React",
+    "info": "Explora React, la biblioteca JavaScript para construir interfaces de usuario. Aprende a desarrollar aplicaciones web modernas y eficientes.",
+    "imagen": "react.png"
+  },
+  {
+    "id": "id10",
+    "titulo": "Python",
+    "info": "Sumérgete en el mundo de Python, un lenguaje de programación versátil. Desde desarrollo web hasta inteligencia artificial, Python lo abarca todo.",
+    "imagen": "python.png"
+  },
+  {
+    "id": "id11",
+    "titulo": "Vue.js",
+    "info": "Descubre Vue.js, un marco progresivo de JavaScript para construir interfaces de usuario. Aprende a crear aplicaciones interactivas y dinámicas.",
+    "imagen": "vuejs.png"
+  },
+  {
+    "id": "id12",
+    "titulo": "Diseño UX/UI",
+    "info": "Aprende los principios del diseño de experiencia de usuario (UX) y diseño de interfaz de usuario (UI). Crea productos digitales atractivos y fáciles de usar.",
+    "imagen": "uxui.png"
+  },
+  {
+    "id": "id13",
+    "titulo": "SQL",
+    "info": "Domina SQL, el lenguaje de consulta estructurada para gestionar bases de datos relacionales. Aprende a trabajar con datos de manera eficiente.",
+    "imagen": "sql.png"
+  },
+  {
+    "id": "id14",
+    "titulo": "Machine Learning",
+    "info": "Adéntrate en el mundo del Machine Learning. Descubre algoritmos y técnicas para que las máquinas aprendan y tomen decisiones inteligentes.",
+    "imagen": "machinelearning.png"
+  },
+  {
+    "id": "id15",
+    "titulo": "Docker",
+    "info": "Aprende Docker, una plataforma de contenedores que simplifica el desarrollo, implementación y escalabilidad de aplicaciones. Moderniza tu proceso de desarrollo.",
+    "imagen": "docker.png"
+  }
+]

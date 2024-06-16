@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juguemos</title>
+    <!-- Icono página -->
+    <link rel="shortcut icon" href="./imagenes/iconoLanding.png" />
+    <!-- FontAwesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/7d303211a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/juego-drag&drop.css" />
+    <!-- JavaScript -->
+    <script src="./javascript/juego-drag&drop.js"></script>
+  </head>
+  <body>
+    <!-- Contenedor que se aloja en la parte superior de la página, contiene el nombre del juego y los botones 
+        para reiniciar el juego o proporcionar información al usuario -->
+    <header>
+      <i class="fa-solid fa-house ocultar"></i>
+      <h1>Drag & Code</h1>
+      <div class="reinicio ocultar">
+        <i class="fa-solid fa-arrows-rotate reiniciar"></i>
+        <i class="fa-solid fa-circle-info informacion"></i>
+      </div>
+    </header>
+
+    <!-- Contenedor donde están las imágenes, la información propia del juego y sus instrucciones -->
+    <div class="contenedor">
+      <!-- Aquí se alojan los contenedores donde están las imágenes a colocar y su destino -->
+      <section class="juego">
+        <article class="origen"></article>
+        <article class="destino">
+          <div class="caja-destino">
+            <div class="caja-arrastre"></div>
+            <span class="nombre-lenguaje"></span>
+          </div>
+          <div class="caja-destino">
+            <div class="caja-arrastre"></div>
+            <span class="nombre-lenguaje"></span>
+          </div>
+          <div class="caja-destino">
+            <div class="caja-arrastre"></div>
+            <span class="nombre-lenguaje"></span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Contenedor que da las instrucciones del juego y explica en qué consiste -->
+      <section class="inicio">
+        <p>
+          Bienvenid@ a Drag & Code, juego en el que se mostrarán 6 códigos de
+          programación de forma aleatoria. Ten en cuenta que estas imágenes
+          cambiarán cada vez que reinicies el juego.
+        </p>
+        <p>
+          En el panel de la derecha encontrarás 3 nombres de lenguajes de
+          programación los cuales pertenecen a 3 de las imágenes que están a la
+          izquierda. El juego consiste en arrastrar de forma correcta el código
+          con su nombre.
+        </p>
+        <p>
+          El botón de ayuda, te dará una breve definición sobre cada uno de los
+          lenguajes de programación existentes en el juego.
+        </p>
+        <button class="iniciar-juego">
+          JUGAR <i class="fa-solid fa-hand-peace"></i>
+        </button>
+      </section>
+
+      <!-- Contenedor que se muestra una vez que el usuario gana -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <h1>¡Enhorabuena! Juego completado.</h1>
+          <div class="botones-velo">
+            <button class="volver-inicio">Home</button>
+            <button class="recargar">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor que tiene la información sobre todos los lenguajes de programación que aparecen en el juego -->
+      <section class="info-juego"></section>
+    </div>
+
+    <!-- Script que permite que las cartas se puedan voltear -->
+    <script>
+      function rotarFicha(evento) {
+        //closest -> ancestro más próximo desde el selector. Conceptualmente es como querySelector pero desde un elemento y circunscrito a los ancestros de ese elemento. querySelector se realiza desde document con lo que encuentra todas las referencias (querySelectorAll) o solo la primera (queryselector). Para realizar el volteo tenemos que referir el contenedor de front y back para la asignación de las clases
+        let elemento = evento.target.closest(".carta");
+        console.log(elemento);
+
+        elemento.children[0].classList.toggle("giraback");
+        elemento.children[1].classList.toggle("girafront");
+      }
+    </script>
+  </body>
+</html>

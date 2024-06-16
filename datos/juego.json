@@ -1,0 +1,98 @@
+[
+  {
+    "id": "id1",
+    "titulo": "Bash",
+    "info": "Es un intérprete de comandos y lenguaje de programación integrado que corre bajo el macroprocesador Shell de Unix.",
+    "imagen": "bash.png"
+  },
+  {
+    "id": "id2",
+    "titulo": "C#",
+    "info": "Es un lenguaje de programación moderno, innovador, de código abierto, multiplataforma orientado a objetos y uno de los 5 principales lenguajes de programación de GitHub.",
+    "imagen": "code-C.png"
+  },
+  {
+    "id": "id3",
+    "titulo": "HTML",
+    "info": "Es un lenguaje de marcado que se utiliza para crear páginas web. HTML es el componente más básico de la Web y define el significado y la estructura del contenido web.",
+    "imagen": "code-HTML.jpg"
+  },
+  {
+    "id": "id4",
+    "titulo": "Java",
+    "info": "Es un lenguaje de programación de alto nivel, orientado a objetos y multiplataforma. Java es uno de los lenguajes de programación más populares y se utiliza en una amplia variedad de aplicaciones, desde aplicaciones móviles hasta sistemas empresariales.",
+    "imagen": "code-java.png"
+  },
+  {
+    "id": "id5",
+    "titulo": "JavaScript",
+    "info": "JavaScript es un lenguaje de programación interpretado y orientado a objetos que se utiliza principalmente para crear contenido dinámico en sitios web. JavaScript es uno de los lenguajes de programación más populares.",
+    "imagen": "code-javascript.jpg"
+  },
+  {
+    "id": "id6",
+    "titulo": "PHP",
+    "info": "PHP es un lenguaje de programación de alto nivel, interpretado y orientado a objetos que se utiliza principalmente para crear contenido dinámico en sitios web.",
+    "imagen": "code-php.jpg"
+  },
+  {
+    "id": "id7",
+    "titulo": "Python",
+    "info": "Python es un lenguaje de programación interpretado, de alto nivel y de propósito general. Es conocido por su sintaxis clara y legible y es utilizado en una amplia variedad de aplicaciones, desde desarrollo web hasta inteligencia artificial.",
+    "imagen": "code-python.jpg"
+  },
+  {
+    "id": "id8",
+    "titulo": "R",
+    "info": "R es un lenguaje de programación y entorno de desarrollo estadístico. Es ampliamente utilizado en estadísticas y análisis de datos.",
+    "imagen": "code-R.png"
+  },
+  {
+    "id": "id9",
+    "titulo": "SQL",
+    "info": "SQL (Structured Query Language) es un lenguaje de programación utilizado para gestionar y manipular bases de datos relacionales.",
+    "imagen": "code-sql.png"
+  },
+  {
+    "id": "id10",
+    "titulo": "TypeScript",
+    "info": "TypeScript es un lenguaje de programación de código abierto que es un superset de JavaScript. Agrega tipado estático opcional y otros features al lenguaje.",
+    "imagen": "code-typescript.jpg"
+  },
+  {
+    "id": "id11",
+    "titulo": "Visual Basic .NET",
+    "info": "Visual Basic .NET es un lenguaje de programación desarrollado por Microsoft. Es una evolución de Visual Basic con soporte para la plataforma .NET.",
+    "imagen": "code-VisualBasic.png"
+  },
+  {
+    "id": "id12",
+    "titulo": "CSS",
+    "info": "CSS (Cascading Style Sheets) es un lenguaje utilizado para definir el estilo y presentación de documentos HTML. Controla el diseño, los colores y otros aspectos visuales de una página web.",
+    "imagen": "codigo-css.jpg"
+  },
+  {
+    "id": "id13",
+    "titulo": "Vue",
+    "info": "Vue.js es un marco de JavaScript utilizado para construir interfaces de usuario interactivas. Ofrece un enfoque reactivo para la construcción de componentes y es ampliamente utilizado en el desarrollo web moderno.",
+    "imagen": "code-vue.png"
+  },
+  {
+    "id": "id14",
+    "titulo": "Node JS",
+    "info": "Node.js es un entorno de ejecución para JavaScript del lado del servidor. Permite ejecutar código JavaScript en el servidor, facilitando la creación de aplicaciones escalables y de alto rendimiento.",
+    "imagen": "code-nodejs.jpg"
+  },
+  {
+    "id": "id15",
+    "titulo": "GitHub",
+    "info": "GitHub es una plataforma de desarrollo colaborativo que utiliza el sistema de control de versiones Git. Facilita la colaboración en proyectos de software y el seguimiento de cambios en el código fuente.",
+    "imagen": "code-git.jpg"
+  },
+  {
+    "id": "id16",
+    "titulo": "React",
+    "info": "React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas. Desarrollada por Facebook, se centra en la creación de componentes reutilizables para construir interfaces de usuario declarativas.",
+    "imagen": "code-react.png"
+  }
+]

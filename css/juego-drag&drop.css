@@ -1,0 +1,490 @@
+@import url(../css/comun.css);
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+
+:root {
+  --colorGris: #dfdad6;
+  --colorMarron: #60564c;
+  --size-small: 20px;
+  --sizeNormal: 40px;
+  --sizeBig: 50px;
+  --fontH1: "Lemon", serif;
+}
+
+body {
+  background-image: url(../imagenes/juego/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  min-width: 862px;
+  overflow-x: hidden;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5em;
+  font-size: var(--sizeNormal);
+  color: var(--colorMarron);
+  backdrop-filter: blur(55px);
+  background-color: var(--colorGris);
+  box-shadow: 5px 12px 12px -6px #738494; /*Sombra del contenedor*/
+  opacity: 0;
+}
+
+.ocultar {
+  display: none;
+}
+
+header h1 {
+  font-family: var(--fontH1);
+  font-size: var(--sizeBig);
+  color: #60564c;
+}
+
+header i:hover {
+  cursor: pointer;
+  color: rgb(130, 112, 77);
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  color: rgb(172, 176, 197);
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem auto 0 auto;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 0;
+  text-align: center;
+  background-color: #120a0a;
+  font-weight: bold;
+}
+
+button:hover {
+  color: wheat;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.inicio {
+  backdrop-filter: blur(20px); /* Aplica transparencia al contenedor*/
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 12px 12px -6px rgba(0, 0, 0, 0.5); /*Sombra del contenedor*/
+  border-radius: 5px;
+  color: var(--colorMarron);
+  font-size: 2em;
+  font-weight: bold;
+  text-align: justify;
+  padding: 25px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transition: top 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.inicio p {
+  margin: 10px;
+}
+
+.inicio > * {
+  font-family: "Alkatra", system-ui;
+}
+
+.juego {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: -1000px;
+  transition: top 0.7s ease;
+}
+
+.origen,
+.destino {
+  border-radius: 8px;
+  color: #333;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.origen {
+  width: 50vw;
+  height: 80vh;
+}
+
+.origen img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 10px 12px -4px rgba(69, 69, 69, 1);
+}
+
+.destino {
+  width: 20vw;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.destino div {
+  width: 200px;
+  height: 160px;
+  background-color: white;
+  border: 1px dotted gray;
+  position: relative;
+}
+
+.destino img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 10px 12px -4px rgba(69, 69, 69, 1);
+}
+
+.destino span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #dfd8d0;
+  color: var(--colorMarron);
+  padding: 10px;
+  border-bottom: 1px solid rgba(80, 79, 79, 0.2);
+  border-radius: 20px;
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  font-family: "Teko", sans-serif;
+  font-size: var(--size-small);
+}
+
+.caja-destino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+/* Estilos para mostrar el velo */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo del velo*/
+}
+
+/* Contenedor con el mensaje a mostrar en el velo */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a6aeb0;
+  border-radius: 25px;
+  box-shadow: 0 10px 12px -4px #a6aeb0;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--colorMarron);
+  font-family: "Abril Fatface", serif;
+}
+
+.botones-velo > * {
+  color: aliceblue;
+  width: 150px;
+  background-color: var(--colorMarron);
+  font-size: var(--size-small);
+}
+
+.botones-velo > *:hover {
+  color: var(--colorGris);
+  font-weight: bold;
+}
+
+.botones-velo {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 0.5;
+  justify-content: space-around;
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-size: cover;
+    min-width: 768px;
+  }
+
+  header h1,
+  header i,
+  header .reinicio > i {
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .origen {
+    width: 45vw;
+    height: 80vh;
+  }
+
+  .destino {
+    width: 35vw;
+    height: 80vh;
+  }
+
+  .origen img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
+  body {
+    background-size: cover;
+    min-width: 500px;
+  }
+
+  header {
+    align-items: baseline;
+    height: 8vh;
+  }
+
+  header h1,
+  header i,
+  header .reinicio > i {
+    font-size: var(--size-small);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor {
+    width: 100vw;
+    height: 80vh;
+  }
+  .origen {
+    width: 50vw;
+    height: 80vh;
+  }
+  .destino {
+    width: 40vw;
+    height: 80vh;
+  }
+
+  .origen img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Contenedor para la información del juego */
+.info-juego {
+  max-width: 75vw;
+  height: auto;
+  width: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  top: -3000px;
+  transition: top .8s ease;
+}
+
+.cursos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.carta {
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2.5em;
+}
+
+.carta .front,
+.carta .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  padding: 10px;
+  transition: transform 1.5s linear 0s;
+  box-shadow: 0 5px 10px var(--colorGris);
+}
+
+.carta .front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.carta .front h1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 45px;
+  line-height: 45px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: rgb(248, 248, 248);
+}
+
+.carta .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: var(--colorMarron);
+  color: #d9d9d9;
+}
+
+.carta .back .link {
+  border-top: solid 1px #d9d9d9;
+}
+
+.carta .back .link a {
+  color: #d9d9d9;
+  font-weight: bold;
+}
+
+/* Clases para aplicar desde JavaScript */
+.carta .girafront {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.carta .giraback {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.categorias-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 15px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.categorias-cursos p {
+  display: block;
+  border-bottom: 2px solid white;
+  flex-grow: 1;
+  font-size: var(--size-grande);
+  color: white;
+  font-weight: bold;
+}
+
+.buttons-categorias {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 0.5em;
+  padding: 5px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.categoria {
+  height: auto;
+  padding: 3px;
+  border-radius: 25px;
+  border-color: transparent;
+  font-size: var(--size-normal);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+  background-color: #d9d9d9;
+}
+
+.categoria:hover {
+  background-color: #a47f71;
+}
+
+.vista-cursos {
+  display: flex;
+  gap: 0.8em;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  color: #fffefe;
+  font-size: 20px;
+}
+
+.vista-cursos > * {
+  cursor: pointer;
+}
+
+.establece-scroll {
+  overflow-y: hidden;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 650px) {
+  .carta {
+    display: flex;
+    align-items: center;
+  }
+
+  .buttons-categorias {
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    display: none;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "opiniones": [
+    {
+      "comentario": {
+        "titulo": "Awesome tool!",
+        "descripcion": "I've been using this tool for a while now, and it has greatly improved my workflow. The features are incredible, and the user interface is so intuitive. I highly recommend it!"
+      },
+      "num_estrellas": 5,
+      "info-persona": {
+        "foto": "persona.jpg",
+        "informacion-personal": {
+          "nombre": "John Doe",
+          "puesto-trabajo": "Web Developer"
+        }
+      }
+    },
+    {
+      "comentario": {
+        "titulo": "Herramienta increíble",
+        "descripcion": "Llevo usando esta herramienta por un tiempo y ha mejorado enormemente mi flujo de trabajo. Las características son increíbles y la interfaz de usuario es muy intuitiva. ¡La recomiendo altamente!"
+      },
+      "num_estrellas": 5,
+      "info-persona": {
+        "foto": "persona.jpg",
+        "informacion-personal": {
+          "nombre": "Ana García",
+          "puesto-trabajo": "Diseñadora Gráfica"
+        }
+      }
+    },
+    {
+      "comentario": {
+        "titulo": "Muy útil para mi trabajo",
+        "descripcion": "Esta herramienta ha sido esencial en mi trabajo diario. La eficiencia que ofrece ha hecho que mis tareas sean mucho más sencillas y rápidas de realizar. ¡No puedo imaginarme trabajar sin ella!"
+      },
+      "num_estrellas": 5,
+      "info-persona": {
+        "foto": "persona.jpg",
+        "informacion-personal": {
+          "nombre": "Juan López",
+          "puesto-trabajo": "Analista de Datos"
+        }
+      }
+    }
+  ]
+}
